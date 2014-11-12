@@ -10,3 +10,40 @@ body {
 .center-text {
   text-align: center;
 }
+
+.hed {
+
+}
+
+.subhed {
+  font-style: italic;
+}
+
+.util-container {
+	padding: 0 1em;
+}
+
+.util {
+	margin: 3em 0;
+}
+
+.util h2 {
+	font-size: 1.2em;
+}
+
+.util h2 a {
+	display: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	color: #666;
+	font-size: 0.7em;
+	margin-left: 1em;
+}
+
+.util h2 a:visited {
+	color: #666;
+}
+
+.util h2 a:hover {
+	color: #000;
+}
