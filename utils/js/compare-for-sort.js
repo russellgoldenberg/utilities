@@ -1,20 +1,22 @@
 function compareForSort(params) {
-	var dir = params.dir === 'asc' ? 1 : -1; 
-	if(params.values[0] < params.values[1]) {
+	var dir = params.direction === 'ascending' ? 1 : -1; 
+	var a = params.items[0][params.property];
+	var b = params.items[1][params.property];
+	if(a < b) {
 		return -1 * dir;
-	} else if (params.values[0] > params.values[1]) {
+	} else if (a > b) {
 		return 1 * dir;
 	}
 	return 0;
 }
 
 // Example
-// params = { values: [*value1*, *value2*], dir: '*asc* || *desc*' }
+// params = { items: [*value1*, *value2*], direction: '*ascending* || *descending*', property: '*name*' }
 var arr = [
-	{ 'name': 'Colin', 'age': 27 },
-	{ 'name': 'Mike', 'age': 17 },
-	{ 'name': 'Russell', 'age': 28 }];
+	{ 'firstname': 'Colin', 'age': 27 },
+	{ 'firstname': 'Mike', 'age': 17 },
+	{ 'firstname': 'Russell', 'age': 28 }];
 
 arr.sort(function(a,b) {
-	return compareForSort({dir: 'asc', values: [a.age, b.age]});
+	return compareForSort({items: [a, b], dir: 'asc', property: 'age' });
 });
