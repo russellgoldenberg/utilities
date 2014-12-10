@@ -47,3 +47,7 @@ body {
 .util h2 a:hover {
 	color: #000;
 }
+
+.util pre {
+	font-size: 0.8em;
+}
