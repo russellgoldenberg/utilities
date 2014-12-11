@@ -18,5 +18,5 @@ var arr = [
 	{ 'firstname': 'Russell', 'age': 28 }];
 
 arr.sort(function(a,b) {
-	return compareForSort({items: [a, b], dir: 'asc', property: 'age' });
+	return compareForSort({items: [a, b], direction: 'ascending', property: 'age' });
 });
