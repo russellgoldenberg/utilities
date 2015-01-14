@@ -1,8 +1,8 @@
 // dependencies: jquery, lodash (both default on Globe)
-function setupResize() {
+var setupResize = function() {
 	$(window).on('resize', _.debounce(resize, 150));
 }
 
-function resize() {
+var resize = function() {
 	// do something on resize 
 }

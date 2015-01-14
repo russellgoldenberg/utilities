@@ -1,4 +1,4 @@
-function formatDecimals(x, decimalPlaces) {
+var formatDecimals = function(x, decimalPlaces) {
 	decimalPlaces = decimalPlaces || 0;
 
 	if (x === 1) {

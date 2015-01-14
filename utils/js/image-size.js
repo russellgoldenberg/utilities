@@ -1,4 +1,4 @@
-function getOptimalImageSize(sizes) {
+var getOptimalImageSize = function(sizes) {
 	var trueScreenWidth = window.screen.width * window.devicePixelRatio;
 	var numSizes = sizes.length - 1;
 	var best = sizes[numSizes];

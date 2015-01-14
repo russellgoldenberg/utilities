@@ -1,4 +1,4 @@
-function compareForSort(params) {
+var compareForSort = function(params) {
 	var dir = params.direction === 'ascending' ? 1 : -1; 
 	var a = params.items[0][params.property];
 	var b = params.items[1][params.property];

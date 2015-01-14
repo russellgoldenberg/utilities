@@ -1,4 +1,4 @@
-function loadImage(url, cb) {
+var loadImage = function(url, cb) {
     var img = new Image();
 
     img.onload = function() {

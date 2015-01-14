@@ -1,4 +1,4 @@
-function ieVersionOrLess(x) {
+var ieVersionOrLess = function(x) {
 	x = x || 0;
 	var htmlClasses = document.getElementsByTagName('html')[0].className;
 	var matches = htmlClasses.match(/ie\d/);
