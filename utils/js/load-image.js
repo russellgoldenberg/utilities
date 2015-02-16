@@ -10,4 +10,4 @@ var loadImage = function(url, cb) {
     };
 
     img.src = url;
-}
+};

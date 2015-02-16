@@ -5,4 +5,4 @@ var copyArray = function(input) {
         output.push(clone);
     }
     return output;
-}
+};

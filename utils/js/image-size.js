@@ -13,7 +13,7 @@ var getOptimalImageSize = function(sizes) {
 	}
 
 	return best;
-}
+};
 
 // a list of image sizes (in width) available in ascending order
 var sizeList = [640, 960, 1280, 1920];

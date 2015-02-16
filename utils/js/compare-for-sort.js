@@ -8,7 +8,7 @@ var compareForSort = function(params) {
 		return 1 * dir;
 	}
 	return 0;
-}
+};
 
 // Example
 // params = { items: [*value1*, *value2*], direction: '*ascending* || *descending*', property: '*name*' }

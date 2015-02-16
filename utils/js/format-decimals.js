@@ -8,4 +8,4 @@ var formatDecimals = function(x, decimalPlaces) {
 	} else {
 		return (100*x).toFixed(decimalPlaces).toString();
 	}
-}
+};
