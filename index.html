@@ -72,6 +72,10 @@
                     <h2>Async load JS<a href='#'>example</a></h2>
                     <pre data-src='utils/js/load-js.js'></pre>
                 </div>
+                <div class='util'>
+                    <h2>Elements scroll into view<a href='#'>example</a></h2>
+                    <pre data-src='utils/js/scroll-into-view.js'></pre>
+                </div>
             </div>
             <div class='center-text'>
             <a href='http://russellgoldenberg.com'>
@@ -82,35 +86,3 @@
         <script src='js/prism.js'></script>
     </body>
 </html>
-<!-- 
-
-
-window.loadImage = function(url, cb) {
-    var img = new Image();
-
-    img.onload = function() {
-        cb();
-    };
-
-    img.onerror = function() {
-        log('error loading image: ' + url);
-        cb('error');
-    };
-
-    img.src = url;
-};
-
-window.log = function(input) {
-    if (window.console && console.log) {
-        console.log(input);
-    }   
-}
-
-window.isMobile = function() {
-    return /iPad|iPod|iPhone|Android/.test(navigator.userAgent) || document.location.hash == "#ipad";
-};
-
-window.ieSomething = function() {
-    var ie = $('html').hasClass('ie8') || $('html').hasClass('ie7');
-    return ie;
-} -->
